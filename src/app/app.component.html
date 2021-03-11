@@ -1,0 +1,3 @@
+<h1> {{ title }} </h1>
+<p *ngFor="let item of thingsToDo; let i = index let odd=odd; let even=even;" [ngClass]="{ oddrow:odd, evenrow:even}">({{ i }}) {{ item }}</p>
+<p *ngIf="thingsCompleted.length ==0">nothing Completed</p>
